@@ -21,7 +21,7 @@
         
         try{
             //$conexion = new PDO('mysql:host=localhost;dbname=login_tuto', 'josejaime', 'admin1234');
-            $conexion = new PDO("$driver:host=$host;port=$port;dbname=$dbname", $user, $password);
+            $conexion = new PDO("$driver:host=$host;port=$port;dbname=$database", $username, $password);
         
         }catch(PDOException $prueba_error){
                 echo "Error: " . $prueba_error->getMessage();
