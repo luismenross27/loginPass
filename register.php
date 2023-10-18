@@ -21,8 +21,8 @@
         $driver = 'pgsql';
         $host = getenv('host');
         $port = getenv('port');
-        $dbname = getenv('dbname');
-        $user =   getenv('user');
+        $database = getenv('database');
+        $username =   getenv('username');
         $password = getenv('password');
         
         if (empty($correo) or empty($usuario) or empty($clave) or empty($clave2)){
