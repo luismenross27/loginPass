@@ -4,7 +4,7 @@ $driver = 'pgsql';
 $host = getenv('host');
 $port = getenv('port');
 $dbname = getenv('dbname');
-$username =   getenv('username');
+$username = getenv('username');
 $password = getenv('password');
 
 try {
