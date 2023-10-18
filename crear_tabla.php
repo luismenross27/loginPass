@@ -9,7 +9,7 @@ $password = getenv('password');
 
 try {
     // Conexión a la base de datos
-    $conn = new PDO("pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password");
+    $conn = new PDO("pgsql:host=$host;port=$port;dbname=$dbname;username=$username;password=$password");
 
     $sql = "DROP TABLE IF EXISTS login";
     $conn->exec($sql);
