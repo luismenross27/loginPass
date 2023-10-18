@@ -2,7 +2,7 @@
 // Datos de conexión a la base de datos PostgreSQL
 $driver = 'pgsql';
 $host = getenv('app-543eb30e-c1b1-47a9-b5ce-d4b8f828f8b6-do-user-14712981-0.c.db.ondigitalocean.com');
-$port = getenv('25060');
+$port = getenv(25060);
 $dbname = getenv('dbsangredemono');
 $user =   getenv('dbsangredemono');
 $password = getenv('AVNS_eBm6i5IKYtPxLRRyeWb');
