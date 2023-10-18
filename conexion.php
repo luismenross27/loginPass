@@ -1,7 +1,12 @@
 <?php
-    
+    $driver = 'pgsql';
+        $host = getenv('host');
+        $port = getenv('port');
+        $dbname = getenv('dbname');
+        $user =   getenv('user');
+        $password = getenv('password');
     try{
-         $conexion = new PDO('mysql:host=localhost;dbname=dblogin', 'login_tuto', '49b36255792fdeed18c6cff9e308d70552d9df8f9feb950c');
+         $conexion = new PDO('mysql:host=localhost;dbname=login_tuto', 'josejaime', 'admin1234');
     }catch(PDOException $prueba_error){
         echo "Error: " . $prueba_error->getMessage();
     }
